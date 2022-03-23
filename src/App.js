@@ -1,23 +1,30 @@
-import logo from './logo.svg';
 import './App.css';
-
+import { Route } from "wouter";
+import Personaje from "./Personaje";
+import Inicio from "./inicio"
 function App() {
   return (
+
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+
+      <div className="centro">
+
+        <div className="nav">
+          <div className='botones'>
+            <a href>Personajes</a>
+            <a href>Info de la pagina</a>
+          </div>
+          <img src='./imagenes/Logo.png' alt='' />
+          <input type="text" placeholder='Buscar Personaje' />
+        </div>
+
+
+        <div className="abajo">
+          <Route path="/Personaje/:name" component={Personaje} />
+          <Route path="/" component={Inicio} />
+
+        </div>
+      </div>
     </div>
   );
 }

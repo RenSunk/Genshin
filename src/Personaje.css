@@ -1,0 +1,14 @@
+.completo{
+    height: 100vh;
+}
+.imagen{
+    width: 200px;
+}
+.nombre{
+    color: white;
+    text-align: center;
+    font-size: 25px;
+}
+.centro{
+    justify-content: space-around;
+}

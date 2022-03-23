@@ -1,38 +1,99 @@
-.App {
+.App{
+  display: flex;
+  justify-content: center;
+  background-color: gray;
+}
+.centro{
+  width: 850px;
+  background-color: #2D3848;
+}
+.nav{
+  display: flex;
+  width: 100%;
+  background-color: #3A4556;
+  height: 60px;
+  justify-content: space-around;
+  align-items: center;
+}
+.nav img{
+  width: 80px;
+}
+.nav input{
+  background: #2D3848;
+  border: 1px solid #2D3848;
+  padding: 5px;
+  border-radius: 10px;
+  outline: none;
+  color: #CACCD0;
+}
+.abajo{
+  width: 100%;
+  background-color: #2D3848;
+}
+a{
+  color: #CACCD0;
+  text-decoration: none;
+}
+.botones a{
+  margin-right: 20px;
+  font-size: 13px;
+}
+.targeta-legendario{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/genshin-7808d.appspot.com/o/Fondo_de_rareza_5.png?alt=media&token=28df8f29-78c4-45e1-9189-7c541e397f05");
+  margin: 20px 20px 25px 20px;
+  
+}
+.targeta-epico{
+  position: relative;
+  width: 80px;
+  height: 80px;
+  border-radius: 10px;
+  background-image: url("https://firebasestorage.googleapis.com/v0/b/genshin-7808d.appspot.com/o/Epico.png?alt=media&token=4cff8efe-b727-4c0c-bda9-9e841972dce5");
+  margin: 20px 20px 30px 20px;
+  
+}
+.targeta-legendario div{
+  display: flex;
+  justify-content: center;
+}
+
+.targeta-legendario img{
+  width: 80px;
+  height: 80px;
+}
+
+.targeta-epico div{
+  display: flex;
+  justify-content: center;
+}
+
+.targeta-epico img{
+  width: 80px;
+  height: 80px;
+}
+
+.targeta-epico div a{
+  text-align: center;
+}
+.targeta-legendario div a{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.elemento img{
+  width: 25px;
+  height: 25px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.elemento{
+  position: absolute; 
+  top: 3px;
+  left: 2px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.lista{
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+  flex-wrap: wrap;
 }
